@@ -3,8 +3,8 @@ int main(void){
 int rupees,dollars,pounds;
 scanf("%d",&dollars);
 
-rupees=dollars*40;
-pounds= rupees/70;
+rupees=dollars*95;
+pounds= rupees/129;
 
 printf("Pounds=%d",pounds);
 }
