@@ -1,27 +1,25 @@
 #include<stdio.h>
 #include<conio.h>
 void main()
+{ int n,q,r,t,c=0,s=0,rev=0,arm=0;
+clrscr();
+printf("enter a no.:");
+scanf("%d",&n); t=n;
+while(n)
 {
-   int x[5], i,j,t;
-   clrscr();
-   printf("\nenter 5 values:");
-   for(i=0;i<5;i++)
-	   scanf("%d",&x[i]);
-   printf("\noriginal values are...");
-   for(i=0;i<5;i++)
-	   printf("%d",x[i]);
-   // sorting array in descending order.
-   for (i=0;i<=3;i++)
-	  for(j=i+1;j<=4;j++)
-		 if(x[i]< x[j])
-		 {
-			t = x[i];
-			x[i] = x[j];
-			x[j] = t;
-		 }
-
-   printf("\nsorted values are...");
-   for(i=0;i<5;i++)
-  printf("%d",x[i]);
-  getch();
-  }
+      q = int(n/10);
+      r = n%10;
+      c++;
+      s= s+r;
+      arm = arm + r*r*r;
+      printf("%d ",r);
+      n=q;
+      }
+      printf("\nOriginal no. :%d\n",t);
+      printf("No. of digits :%d\n",c);
+      printf("Sum of digits :%d\n",s);
+      printf("Reverse of no. :%d\n",rev);
+      printf("Palindrome :%s\n",(t==rev)?"Yes":"No");
+      printf("Armstrong no.:%s\n",(t==arm)?"Yes":"No");
+      getch();
+      }
